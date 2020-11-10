@@ -12,8 +12,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    Event.create(blog_parameter)
-    redirect_to blogs_path
+    Event.create(event_parameter)
+    redirect_to("/events/index")
   end
 
   def destroy
@@ -41,5 +41,6 @@ class EventsController < ApplicationController
     params.require(:event).permit(:event_name, :category, :start_time)
   end
 
+  
 end
-end
+

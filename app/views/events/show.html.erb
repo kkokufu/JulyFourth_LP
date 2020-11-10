@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>イベント名</strong>
+  <%= @event.event_name %>
+</p>
+
+<p>
+  <strong>時間</strong>
+  <%= @event.start_time.strftime("%Y-%m-%d %H:%M") %>
+</p>
+
+<p>
+  <strong>カテゴリー</strong>
+  <%= @event.category %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
