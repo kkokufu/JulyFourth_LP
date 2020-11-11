@@ -1,2 +1,10 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="main posts-index">
+  <div class="container">
+    <h2>参加者申込一覧</h2>
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <%= post.account %>
+      </div>
+    <% end %>
+  </div>
+</div>
