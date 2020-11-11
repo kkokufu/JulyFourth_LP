@@ -1,0 +1,19 @@
+<div class="main posts-new">
+  <% if flash[:notice] %>
+    <div class="form-error">
+       <%= flash[:notice] %>
+    </div>
+  <% end %>     
+  <div class="container">
+    <h1 class="form-heading">申込みフォーム</h1>
+    <%= form_tag("/posts/create") do %>
+      <div class="form">
+        <div class="form-body">
+          <p>インスタグラムのアカウントを入力して下さい
+          <input name="account"></input>
+          <input type="submit" value="送信">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
