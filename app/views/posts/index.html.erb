@@ -3,7 +3,9 @@
     <h2>参加者申込一覧</h2>
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= link_to(post.account, "/posts/#{post.id}") %>
+        <%= post.account %>
+        <br>
+        <%= post.created_at %>
       </div>
     <% end %>
   </div>
