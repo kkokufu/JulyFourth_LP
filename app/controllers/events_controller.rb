@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   def index
     @events = Event.all
+    @coming_events = Event.where("start_time>?", Date.today).order("start_time").limit(5)
   end
 
   def new

@@ -29,12 +29,11 @@
   </thead>
 
   <tbody>
-    <% @events.each do |event| %>
-      <tr>
+    <% @coming_events.each do |event| %>
+      <tr> 　
         <td><%= event.event_name %></td>
         <td><%= event.category %></td>
         <td><%= event.start_time.strftime("%Y-%m-%d %H:%M") %></td>
-        
       </tr>
     <% end %>
   </tbody>
