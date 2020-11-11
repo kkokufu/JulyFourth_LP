@@ -2,6 +2,22 @@
 
 <h1>イベントスケジュール</h1>
 
+<br>
+
+<%= link_to 'イベント登録', '/events/new' %>
+
+<%= month_calendar events: @events do |date, events| %>
+  <%= date.day %>
+
+  <% events.each do |event| %>
+    <div>
+      <%= link_to event.event_name, "events/index" %>
+    </div>
+  <% end %>
+<% end %>
+
+<br>
+
 <table>
   <thead>
     <tr>
@@ -16,23 +32,10 @@
     <% @events.each do |event| %>
       <tr>
         <td><%= event.event_name %></td>
+        <td><%= event.category %></td>
         <td><%= event.start_time.strftime("%Y-%m-%d %H:%M") %></td>
         
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'イベント登録', '/events/new' %>
-
-<%= month_calendar events: @events do |date, events| %>
-  <%= date.day %>
-
-  <% events.each do |event| %>
-    <div>
-      <%= link_to event.event_name, "events/index" %>
-    </div>
-  <% end %>
-<% end %>
