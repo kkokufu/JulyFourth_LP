@@ -18,5 +18,11 @@ class UsersController < ApplicationController
       @error_message = "アカウントまたはパスワードが間違っています"
       render("users/login_form")
     end    
+  end
+  
+  def logout
+    session[:user_id] = nil
+    flash[:notice] = "ログアウトしました"
+    redirect_to("/events/index")
   end  
 end
