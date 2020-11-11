@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'login' => 'users#login_form'
-  
+  post "login" => "users#login"
+
   get 'users/index'
   get 'posts/new' => 'posts#new'
   get 'posts/index' 
