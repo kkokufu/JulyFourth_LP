@@ -12,7 +12,7 @@
   <body>
     <header>
       <ul class="header-menus">
-        <%if session[:user_id] %>
+        <%if @current_user %>
          <li>
            <%= link_to("参加申込者一覧", "/posts/index") %>
          </li>
