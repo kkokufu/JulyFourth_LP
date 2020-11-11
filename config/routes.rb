@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'posts/index'
-  
+  get 'posts/:id' => 'posts/show'
+
   post "events/:id/update" => "events#update"
   get "events/:id/edit" => "events#edit"
   post "events/create" => "events#create"
