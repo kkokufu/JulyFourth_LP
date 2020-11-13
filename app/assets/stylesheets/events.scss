@@ -248,12 +248,13 @@
 
 .btn-square {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 25px 75px;
   text-decoration: none;
   background: #668ad8;/*ボタン色*/
   color: #FFF;
   border-bottom: solid 4px #627295;
-  border-radius: 3px;
+  border-radius: 25%;
+  font-size: 2rem;
 }
 .btn-square:active {
   /*ボタンを押したとき*/
