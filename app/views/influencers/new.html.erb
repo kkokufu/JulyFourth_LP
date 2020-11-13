@@ -1,0 +1,24 @@
+<%= form_with(model: @influencer, url: "/influencers/create", local: true) do |form| %>
+    <br>
+    <br>
+    <div class="title">
+      <%= form.label :event_name %>
+      <%= form.text_field :event_name %>
+    </div>
+  
+      <div class="time">
+      <%= form.label :インスタアカウント %>
+      <%= form.text_field :account %>
+    </div>
+  
+    <div class="content">
+      <%= form.label :カテゴリー %>
+      <%= form.select :category, {"influence":"influence", "outgoing":"outgoing", "spread":"spread", "offer_inf":"offer_inf"} %>
+    </div>
+  
+  
+    <div class="submit">
+      <%= form.submit %>
+    </div>
+  
+  <% end %>

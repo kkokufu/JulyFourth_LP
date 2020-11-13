@@ -1,6 +1,15 @@
 class InfluencersController < ApplicationController
+  def new
+    @influencer = Influencer.new
+  end  
   def create
-    @influencer = influencer..new(event_name:params[: event_name], account:params[: account], category:params[: category])
-    @influencer.save
+    Influencer.create(influencer_parameter)
+    redirect_to("/events/index")
+  end
+
+  private
+
+  def influencer_parameter
+    params.require(:influencer).permit(:event_name, :account, :category)
   end
 end
