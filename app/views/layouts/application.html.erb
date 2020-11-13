@@ -13,15 +13,21 @@
     <header>
       <ul class="header-menus">
         <%if @current_user %>
+        <li>
+           <%= link_to 'LPトップページ', '/events/index' %>
+         </li>
          <li>
            <%= link_to("参加申込者一覧", "/posts/index") %>
          </li>
          <li>
-           <%= link_to("ログアウト", "/logout", {method: :post}) %>
+           <%= link_to 'イベント登録', '/events/new' %>
          </li>
          <li>
-           <%= link_to 'イベント登録', '/events/new' %>
-         </li>  
+           <%= link_to '参加者登録', '/influencers/new' %>
+         </li> 
+         <li>
+           <%= link_to("ログアウト", "/logout", {method: :post}) %>
+         </li> 
         <% end %>
       </ul>
     </header>
