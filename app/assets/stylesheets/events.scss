@@ -276,4 +276,45 @@
   
 .top-image {
   width: 100%;
+  position:relative;
 }  
+
+.logo-background {
+  background-image: url("/logo_background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+}
+
+.logo-spread {
+  width:650px;
+	height: auto;
+  position:absolute;
+  top: 800px;
+	left:0px;
+}
+
+.logo-outgoing {
+  width:620px;
+	height: auto;
+  position:absolute;
+  top: 800px;
+	right:20px;
+}
+
+.logo-influence {
+  width:550px;
+	height: auto;
+  position:absolute;
+  top: 1200px;
+	left:50px;
+}
+
+.logo-offer_inf {
+  width:550px;
+	height: auto;
+  position:absolute;
+  top: 1200px;
+	right:50px;
+}
