@@ -279,6 +279,12 @@
   position:relative;
 }  
 
+.title-category {
+  /*線の種類（二重線）太さ 色*/
+  border-bottom: double 5px #0da1f7;
+  width: 380px;
+  margin: auto;
+}
 .logo-background {
   background-image: url("/logo_background.jpg");
   background-repeat: no-repeat;
@@ -291,7 +297,7 @@
   width:650px;
 	height: auto;
   position:absolute;
-  top: 800px;
+  top: 950px;
 	left:0px;
 }
 
@@ -299,7 +305,7 @@
   width:620px;
 	height: auto;
   position:absolute;
-  top: 800px;
+  top: 950px;
 	right:20px;
 }
 
@@ -307,7 +313,7 @@
   width:550px;
 	height: auto;
   position:absolute;
-  top: 1200px;
+  top: 1350px;
 	left:50px;
 }
 
@@ -315,7 +321,7 @@
   width:550px;
 	height: auto;
   position:absolute;
-  top: 1200px;
+  top: 1350px;
 	right:50px;
 }
 
