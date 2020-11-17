@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end  
 
   def create
-    @post = Post.new(id:params[:id])
+    @post = Post.new(account:params[:account])
     @post.save
     
     if @post.save
