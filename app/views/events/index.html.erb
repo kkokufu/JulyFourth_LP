@@ -41,10 +41,10 @@
       <%= event.category %>
       <br>
       <% unless event.amb_name1 == nil %>
-        <%= link_to(event.amb_name1, "events/index") %>
+        <%= link_to(event.amb_name1, "/ambassadors1/#{event.id}") %>
       <% end %>  
       <% unless event.amb_name2 == nil %>
-        <%= link_to(event.amb_name2, "events/index") %>
+        <%= link_to(event.amb_name2, "/ambassadors2/#{event.id}") %>
       <% end %> 
     </div>
   <% end %>

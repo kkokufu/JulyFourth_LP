@@ -2,6 +2,7 @@ class EventsController < ApplicationController
   def index
     @events = Event.all
     @coming_events = Event.where("start_time>?", Date.today).order("start_time").limit(5)
+    @ambassador = Event.find_by(id:params[:id])
   end
 
   def new
