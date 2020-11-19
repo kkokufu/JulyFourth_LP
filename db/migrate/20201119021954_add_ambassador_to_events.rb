@@ -4,5 +4,7 @@ class AddAmbassadorToEvents < ActiveRecord::Migration[6.0]
     add_column :events, :amb_name2, :string
     add_column :events, :amb_img1, :string
     add_column :events, :amb_img2, :string
+    add_column :events, :amb_content1, :string
+    add_column :events, :amb_content2, :string
   end
 end
