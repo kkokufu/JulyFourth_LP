@@ -1,7 +1,8 @@
 <br><br><br><br><br><br>
-<% form_tag("/ambassadors2/#{@ambassador.id}/update", {multipart:true}) do %>
-  <p>紹介文章<p>
-  <input name="amb_content2">
+<%= form_tag("/ambassadors2/#{@ambassador.id}/update", {multipart: true}) do %>
+
+  <p>紹介文章</p>
+  <textarea name="amb_content2"></textarea>
   <br>
   <p>画像</p>
   <input name="amb_img2" type="file">

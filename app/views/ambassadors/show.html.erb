@@ -1,14 +1,15 @@
-<%= @ambassador.amb_img1 %>
-<%= @ambassador.amb_content1 %>
+<br><br><br><br><br><br>
 
+<div class="center">
+  <img src="<%= "/amb_images/#{@ambassador.amb_img1}" %>" class="ambassador-image">
+  <p class="text_content"><%= @ambassador.amb_content1 %></p>
 
+  <br><br><br><br>
 
-<img src="<%= "/amb_images/#{@ambassador.amb_img1}" %>">
-<p><%= @ambassador.amb_content1 %></p>
- <br><br><br><br>
- <% if @current_user %> 
-    <%= link_to("画像と紹介文の追加", "/ambassadors1/#{@ambassador.id}/edit") %>
- <% end %>   
+  <% if @current_user %> 
+     <%= link_to("画像と紹介文の追加", "/ambassadors1/#{@ambassador.id}/edit") %>
+  <% end %> 
+</div>    
 
 
   
