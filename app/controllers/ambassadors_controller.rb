@@ -1,4 +1,7 @@
 class AmbassadorsController < ApplicationController
+
+before_action :set_current_user
+
   def show
     @ambassador = Event.find_by(id:params[:id])
   end
