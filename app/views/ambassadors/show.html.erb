@@ -1,5 +1,10 @@
 <%= @ambassador.amb_img1 %>
 <%= @ambassador.amb_content1 %>
 
-<%= image_tag @ambassador.amb_img1.inspect %>
+
+¥
+<img src="<%= "/amb_images/#{@ambassador.amb_img1}" %>">
+<p><%= @ambassador.amb_content1 %></p>
+ <br><br><br><br>
+<%= link_to("画像と紹介文の追加", "/ambassadors1/#{@ambassador.id}/edit") %>
 

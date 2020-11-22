@@ -1,4 +1,6 @@
-<%= @ambassador.amb_img2 %>
-<%= @ambassador.amb_content2 %>
+<img src="<%= "/amb_images/#{@ambassador.amb_img2}" %>">
+<p><%= @ambassador.amb_content2 %></p>
+ <br><br><br><br>
+<%= link_to("画像と紹介文の追加", "/ambassadors2/#{@ambassador.id}/edit") %>
 
   

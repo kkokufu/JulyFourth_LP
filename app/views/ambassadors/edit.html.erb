@@ -1,0 +1,13 @@
+<br><br><br><br><br><br>
+<%= form_tag("/ambassadors1/#{@ambassador.id}/update", {multipart: true}) do %>
+
+  <p>紹介文章</p>
+  <input name="amb_content1">
+  <br>
+  <p>画像</p>
+  <input name="amb_img1" type="file">
+  <input type="submit" value="保存">
+<% end %>  
+
+
+aaaaa

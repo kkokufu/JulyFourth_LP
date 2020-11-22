@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  post 'ambassadors1/:id/update' => 'ambassadors#update'
+  post 'ambassadors2/:id/update' => 'ambassadors#update'
+  get 'ambassadors1/:id/edit' => 'ambassadors#edit'
+  get 'ambassadors2/:id/edit2' => 'ambassadors#edit2'
   get 'ambassadors1/:id' => 'ambassadors#show'
   get 'ambassadors2/:id' => 'ambassadors#show2'
 
