@@ -7,7 +7,9 @@
   <br><br><br><br>
 
   <% if @current_user %> 
+   <div class="edit_link"> 
      <%= link_to("画像と紹介文の追加", "/ambassadors2/#{@ambassador.id}/edit") %>
+   </div>
   <% end %> 
 </div>  
   
