@@ -28,11 +28,11 @@ before_action :set_current_user
     end
     
     if params[:amb_img1]
-      @ambassador.amb_img1 = "#{@ambassador.id}.jpg"
+      @ambassador.amb_img1 = "#{@ambassador.id}_1.jpg"
       image1 = params[:amb_img1]
       File.binwrite("public/amb_images/#{@ambassador.amb_img1}", image1.read)
     elsif params[:amb_img2]
-      @ambassador.amb_img2 = "#{@ambassador.id}.jpg"
+      @ambassador.amb_img2 = "#{@ambassador.id}_2.jpg"
       image2 = params[:amb_img2]
       File.binwrite("public/amb_images/#{@ambassador.amb_img2}", image2.read)
     end
