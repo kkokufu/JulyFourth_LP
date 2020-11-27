@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'brands/spread' => 'brands#spread'
+
   post 'ambassadors1/:id/update' => 'ambassadors#update'
   post 'ambassadors2/:id/update' => 'ambassadors#update'
   get 'ambassadors1/:id/edit' => 'ambassadors#edit'
@@ -13,6 +15,8 @@ Rails.application.routes.draw do
   post "login" => "users#login"
   post "logout" => "users#logout"
   get 'users/index'
+
+  get 'posts/flash' => 'posts#flash'
   get 'posts/new' => 'posts#new'
   get 'posts/index' 
   post "posts/create" => "posts#create"

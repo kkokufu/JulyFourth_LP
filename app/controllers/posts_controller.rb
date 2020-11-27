@@ -17,12 +17,16 @@ class PostsController < ApplicationController
     @post.save
     
     if @post.save
-      redirect_to("/posts/new")
-      flash[:notice] = "参加申し込みありがとうございました"
+      redirect_to("/posts/flash")
+      
     else
       redirect_to("/posts/new")
-      flash[:notice] = "正しくアカウントを入力してください"
+      
     end    
+     
+  end 
+  
+  def flash
      
   end  
 end
