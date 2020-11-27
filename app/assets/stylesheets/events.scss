@@ -386,3 +386,24 @@
       vertical-align:top;
       vertical-align:bottom;
     }
+    
+    .trm{
+      position: relative;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      
+    }
+
+    .trm img{
+      position: absolute;
+      top: 150;
+      left: 50;
+      height: auto;
+      width: 100%;
+    }
+    
+
+    @media screen and (max-width: 575px) {
+
+    }
