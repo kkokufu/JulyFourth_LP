@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'brands/spread' => 'brands#spread'
+  get 'brands/spread' => 'brands#spread'
+  get 'brands/spread' => 'brands#spread'
+  get 'brands/spread' => 'brands#spread'
 
   post 'ambassadors1/:id/update' => 'ambassadors#update'
   post 'ambassadors2/:id/update' => 'ambassadors#update'
@@ -17,6 +20,7 @@ Rails.application.routes.draw do
   get 'users/index'
 
   get 'posts/flash' => 'posts#flash'
+  get 'posts/flash2' => 'posts#flash2'
   get 'posts/new' => 'posts#new'
   get 'posts/index' 
   post "posts/create" => "posts#create"

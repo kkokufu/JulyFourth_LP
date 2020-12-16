@@ -20,7 +20,7 @@ class PostsController < ApplicationController
       redirect_to("/posts/flash")
       
     else
-      redirect_to("/posts/new")
+      redirect_to("/posts/flash2")
       
     end    
      
@@ -28,5 +28,8 @@ class PostsController < ApplicationController
   
   def flash
      
+  end  
+
+  def flash2
   end  
 end
