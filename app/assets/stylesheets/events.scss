@@ -425,4 +425,11 @@
         transform: translateY(4px);/*下に動く*/
         border-bottom: none;/*線を消す*/
       }
+
+      .title-calendar {
+        /*線の種類（二重線）太さ 色*/
+        border-bottom: double 5px #f70d0d;
+        width: 350px;
+        margin: auto;
+      }
     }
